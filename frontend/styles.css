@@ -1,7 +1,56 @@
-body { font-family: Arial, sans-serif; margin: 20px; }
-section { margin-bottom: 20px; }
-pre { background: #f4f4f4; padding: 10px; border-radius: 5px; border: 1px solid #ddd; }
-input { padding: 5px; margin-right: 10px; }
-button { padding: 5px 10px; }
- 
- 
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f4f8; /* Light blue-gray background for white theme */
+    color: #1e3a8a; /* Dark blue text for contrast */
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #ffffff; /* White background for sections */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+pre {
+    background: #e6efff; /* Light blue background for code blocks */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #93c5fd; /* Blue border */
+    color: #1e3a8a; /* Dark blue text */
+    font-size: 14px;
+}
+
+input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #3b82f6; /* Blue border */
+    border-radius: 4px;
+    background-color: #ffffff; /* White background */
+    color: #1e3a8a; /* Dark blue text */
+}
+
+input:focus {
+    outline: none;
+    border-color: #1e40af; /* Darker blue on focus */
+    box-shadow: 0 0 5px rgba(30, 64, 175, 0.3); /* Blue glow */
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #3b82f6; /* Blue button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1e40af; /* Darker blue on hover */
+}
+
+button:active {
+    background-color: #1e3a8a; /* Even darker blue on click */
+}
