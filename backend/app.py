@@ -6,9 +6,7 @@ from typing import Optional
 
 app = FastAPI()
 
-# Mount frontend static files
-app.mount("/", StaticFiles(directory="frontend", html=True), name="static")
-
+# Mount static files after defining API routes to avoid conflicts
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:8000", "https://me-api-playground-w35g.onrender.com"],
@@ -50,3 +48,6 @@ def top_skills():
 @app.get("/search")
 def search_query(q: str = Query(...)):
     return search(q)
+
+# Mount static files last
+app.mount("/", StaticFiles(directory="frontend", html=True), name="static")
