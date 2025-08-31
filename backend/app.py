@@ -1,9 +1,13 @@
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from backend.database import Profile, get_profile, create_or_update_profile, get_projects_by_skill, get_top_skills, search
 from typing import Optional
 
 app = FastAPI()
+
+# Mount frontend static files
+app.mount("/", StaticFiles(directory="frontend", html=True), name="static")
 
 app.add_middleware(
     CORSMiddleware,
