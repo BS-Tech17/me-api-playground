@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f0f4f8; /* Light blue-gray background */
+    background-color: #ffffff; /* White background */
     color: #1e3a8a; /* Dark blue text */
 }
 
@@ -11,26 +11,27 @@ header {
 }
 
 h1 {
-    color: #1e3a8a; /* Dark blue */
+    color: #1e3a8a; /* Dark blue heading */
     font-size: 2em;
 }
 
 .card {
     margin-bottom: 20px;
-    background-color: #641fd4; /* White background */
+    background-color: #e0f2fe; /* Light blue card background */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #3b82f6; /* Medium blue border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
 }
 
 .output {
-    background: #1158d4; /* Light blue background */
+    background: #eff6ff; /* Very light blue background */
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #93c5fd; /* Blue border */
+    border: 1px solid #3b82f6; /* Blue border */
     color: #1e3a8a; /* Dark blue text */
     font-size: 14px;
-    min-height: 100px; /* Ensure visibility */
+    min-height: 100px; 
 }
 
 .input-group {
@@ -44,20 +45,20 @@ h1 {
     margin-right: 10px;
     border: 1px solid #3b82f6; /* Blue border */
     border-radius: 4px;
-    background-color: #ffffff; /* White background */
-    color: #1e3a8a; /* Dark blue text */
+    background-color: #ffffff; /* White input background */
+    color: #1e3a8a;
     flex-grow: 1;
 }
 
 .input-field:focus {
     outline: none;
     border-color: #1e40af; /* Darker blue on focus */
-    box-shadow: 0 0 5px rgba(30, 64, 175, 0.3); /* Blue glow */
+    box-shadow: 0 0 5px rgba(30, 64, 175, 0.3); 
 }
 
 .action-button {
     padding: 8px 16px;
-    background-color: #3b82f6; /* Blue button */
+    background-color: #3b82f6; /* Medium blue button */
     color: #ffffff; /* White text */
     border: none;
     border-radius: 4px;
@@ -70,5 +71,5 @@ h1 {
 }
 
 .action-button:active {
-    background-color: #1e3a8a; /* Even darker blue on click */
+    background-color: #1e3a8a; /* Deep blue on click */
 }
