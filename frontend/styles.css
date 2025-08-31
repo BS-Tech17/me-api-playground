@@ -1,43 +1,61 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f0f4f8; /* Light blue-gray background for white theme */
-    color: #1e3a8a; /* Dark blue text for contrast */
+    background-color: #f0f4f8; /* Light blue-gray background */
+    color: #1e3a8a; /* Dark blue text */
 }
 
-section {
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #1e3a8a; /* Dark blue */
+    font-size: 2em;
+}
+
+.card {
     margin-bottom: 20px;
-    background-color: #ffffff; /* White background for sections */
-    padding: 15px;
+    background-color: #641fd4; /* White background */
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-pre {
-    background: #e6efff; /* Light blue background for code blocks */
+.output {
+    background: #1158d4; /* Light blue background */
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #93c5fd; /* Blue border */
     color: #1e3a8a; /* Dark blue text */
     font-size: 14px;
+    min-height: 100px; /* Ensure visibility */
 }
 
-input {
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-field {
     padding: 8px;
     margin-right: 10px;
     border: 1px solid #3b82f6; /* Blue border */
     border-radius: 4px;
     background-color: #ffffff; /* White background */
     color: #1e3a8a; /* Dark blue text */
+    flex-grow: 1;
 }
 
-input:focus {
+.input-field:focus {
     outline: none;
     border-color: #1e40af; /* Darker blue on focus */
     box-shadow: 0 0 5px rgba(30, 64, 175, 0.3); /* Blue glow */
 }
 
-button {
+.action-button {
     padding: 8px 16px;
     background-color: #3b82f6; /* Blue button */
     color: #ffffff; /* White text */
@@ -47,10 +65,10 @@ button {
     font-weight: bold;
 }
 
-button:hover {
+.action-button:hover {
     background-color: #1e40af; /* Darker blue on hover */
 }
 
-button:active {
+.action-button:active {
     background-color: #1e3a8a; /* Even darker blue on click */
 }
