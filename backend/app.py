@@ -7,12 +7,15 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8000", "https://me-api-playground-i6jj.vercel.app/"],
+    allow_origins=[
+        "http://localhost:8000",
+        "https://me-api-playground-i6jj.vercel.app/",
+        "https://me-api-playground-w35g.onrender.com"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 @app.get("/health")
 def health():
@@ -46,4 +49,4 @@ def top_skills():
 
 @app.get("/search")
 def search_query(q: str = Query(...)):
-    return search(q) 
+    return search(q)
