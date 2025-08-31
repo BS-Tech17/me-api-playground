@@ -7,11 +7,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:8000",
-        "https://me-api-playground-i6jj.vercel.app/",
-        "https://me-api-playground-w35g.onrender.com"
-    ],
+    allow_origins=["http://localhost:8000", "https://me-api-playground-w35g.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
