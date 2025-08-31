@@ -1,1 +1,7 @@
+psycopg2-binary
+uvicorn
+fastapi 
+psycopg2-binary
+python-dotenv
+pydantic
  
