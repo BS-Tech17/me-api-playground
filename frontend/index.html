@@ -2,38 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Me-API Playground</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>My Profile Playground</h1>
+    <header>
+        <h1>My Profile Playground</h1>
+    </header>
 
-    <section>
-        <h2>View Profile</h2>
-        <button onclick="viewProfile()">Load Profile</button>
-        <pre id="profile-output"></pre>
-    </section>
+    <main>
+        <section class="card">
+            <h2>View Profile</h2>
+            <button onclick="viewProfile()" class="action-button">Load Profile</button>
+            <pre id="profile-output" class="output"></pre>
+        </section>
 
-    <section>
-        <h2>List Projects</h2>
-        <button onclick="listProjects()">Load All Projects</button>
-        <pre id="projects-output"></pre>
-    </section>
+        <section class="card">
+            <h2>List Projects</h2>
+            <button onclick="listProjects()" class="action-button">Load All Projects</button>
+            <pre id="projects-output" class="output"></pre>
+        </section>
 
-    <section>
-        <h2>Search by Skill</h2>
-        <input type="text" id="skill-input" placeholder="e.g., Python">
-        <button onclick="searchBySkill()">Search Projects</button>
-        <pre id="skill-output"></pre>
-    </section>
+        <section class="card">
+            <h2>Search by Skill</h2>
+            <div class="input-group">
+                <input type="text" id="skill-input" placeholder="e.g., Python" class="input-field">
+                <button onclick="searchBySkill()" class="action-button">Search Projects</button>
+            </div>
+            <pre id="skill-output" class="output"></pre>
+        </section>
 
-    <section>
-        <h2>General Search</h2>
-        <input type="text" id="search-input" placeholder="e.g., AI">
-        <button onclick="generalSearch()">Search</button>
-        <pre id="search-output"></pre>
-    </section>
+        <section class="card">
+            <h2>General Search</h2>
+            <div class="input-group">
+                <input type="text" id="search-input" placeholder="e.g., AI" class="input-field">
+                <button onclick="generalSearch()" class="action-button">Search</button>
+            </div>
+            <pre id="search-output" class="output"></pre>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
