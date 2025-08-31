@@ -1,4 +1,3 @@
-gunicorn
 psycopg2-binary
 uvicorn
 fastapi 
