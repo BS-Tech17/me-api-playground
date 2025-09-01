@@ -4,8 +4,19 @@
 - **Backend**: FastAPI (Python) with PostGRESQL. Single `profile` table storing JSON strings for arrays/objects.
 - **Frontend**: HTML/CSS/JS, fetching API via `fetch()`.
 - **Data Flow**: Frontend calls backend API, which queries PostGRESQL DB.
+  
+### Setup (Local)
+1. Clone: `git clone https://github.com/BS-Tech17/api-playground`
+2. Backend:
+   - `cd api-playground`
+   - `python -m venv venv`
+   - `venv\Scripts\activate`
+   - `pip install fastapi uvicorn sqlalchemy`
+   - `python backend/init_db.py`
+   - `uvicorn backend.app:app --reload`
+3. Frontend: `python -m http.server 8080 --directory frontend`
 
-## Setup (Prod)
+## Setup (Production)
 - **Backend**:
   - New Web Service, link to `https://github.com/BS-Tech17/api-playground`.
   - Runtime: Python.
