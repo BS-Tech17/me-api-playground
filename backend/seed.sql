@@ -1,4 +1,5 @@
 INSERT INTO profile (id, name, email, education, skills, projects, work, links) VALUES (
+    
     1,
     'Full Name',
     'your.email@example.com',
