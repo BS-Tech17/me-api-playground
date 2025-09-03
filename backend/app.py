@@ -66,5 +66,4 @@ def top_skills():
 def search_query(q: str = Query(...)):
     return search(q)
 
-# Mount static files last
 app.mount("/", StaticFiles(directory="frontend", html=True), name="static")
